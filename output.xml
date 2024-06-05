@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.1 on win32)" generated="20240523 17:49:11.553" rpa="false" schemaversion="4">
+<suite id="s1" name="Test Excel" source="c:\Users\Brahyan\Desktop\testeoJava\robot\test_excel.robot">
+<test id="s1-t1" name="Verify All The Data From Excel" line="16">
+<kw name="Read All The Data">
+<arg>yahir</arg>
+<arg>test1@gmail.com</arg>
+<arg>2252 Springdale</arg>
+<arg>406 E Magnolia</arg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name} : ${email} : ${current} : ${permanent}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240523 17:49:13.539" endtime="20240523 17:49:13.547"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FULLNAME}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240523 17:49:13.549" level="INFO">Typing text 'yahir' into text field 'id:userName'.</msg>
+<msg timestamp="20240523 17:49:13.549" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240523 17:49:13.549" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20240523 17:49:13.547" endtime="20240523 17:49:13.563"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAILADD}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.564" endtime="20240523 17:49:13.565"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CURRENTADD}</arg>
+<arg>${current}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.565" endtime="20240523 17:49:13.565"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PERMANENTADD}</arg>
+<arg>${permanent}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.565" endtime="20240523 17:49:13.565"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.565" endtime="20240523 17:49:13.565"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUBMIT_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.569" endtime="20240523 17:49:13.569"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${NAMEVERIFY}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.569" endtime="20240523 17:49:13.569"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${text}</arg>
+<arg>Name:${name}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.569" endtime="20240523 17:49:13.569"/>
+</kw>
+<status status="FAIL" starttime="20240523 17:49:13.539" endtime="20240523 17:49:13.569"/>
+</kw>
+<status status="FAIL" starttime="20240523 17:49:13.539" endtime="20240523 17:49:13.569">No browser is open.</status>
+</test>
+<test id="s1-t2" name="Verify All The Data From Excel" line="16">
+<kw name="Read All The Data">
+<arg>jazmin</arg>
+<arg>test2@gmail.com</arg>
+<arg>495 foreswood</arg>
+<arg>1228 To Lani Rd</arg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name} : ${email} : ${current} : ${permanent}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240523 17:49:13.581" endtime="20240523 17:49:13.583"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FULLNAME}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240523 17:49:13.585" level="INFO">Typing text 'jazmin' into text field 'id:userName'.</msg>
+<msg timestamp="20240523 17:49:13.586" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240523 17:49:13.586" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20240523 17:49:13.584" endtime="20240523 17:49:13.588"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAILADD}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.589" endtime="20240523 17:49:13.589"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CURRENTADD}</arg>
+<arg>${current}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.589" endtime="20240523 17:49:13.590"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PERMANENTADD}</arg>
+<arg>${permanent}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.590" endtime="20240523 17:49:13.591"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.591" endtime="20240523 17:49:13.592"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUBMIT_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.593" endtime="20240523 17:49:13.593"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${NAMEVERIFY}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.593" endtime="20240523 17:49:13.593"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${text}</arg>
+<arg>Name:${name}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.593" endtime="20240523 17:49:13.593"/>
+</kw>
+<status status="FAIL" starttime="20240523 17:49:13.579" endtime="20240523 17:49:13.593"/>
+</kw>
+<status status="FAIL" starttime="20240523 17:49:13.569" endtime="20240523 17:49:13.597">No browser is open.</status>
+</test>
+<test id="s1-t3" name="Verify All The Data From Excel" line="16">
+<kw name="Read All The Data">
+<arg>ray</arg>
+<arg>test3@gmail.com</arg>
+<arg>207 Autumn Ln</arg>
+<arg>4193 Clear Lake Rd</arg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name} : ${email} : ${current} : ${permanent}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240523 17:49:13.607" endtime="20240523 17:49:13.608"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FULLNAME}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240523 17:49:13.610" level="INFO">Typing text 'ray' into text field 'id:userName'.</msg>
+<msg timestamp="20240523 17:49:13.611" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240523 17:49:13.611" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20240523 17:49:13.609" endtime="20240523 17:49:13.614"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAILADD}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.615" endtime="20240523 17:49:13.615"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CURRENTADD}</arg>
+<arg>${current}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.615" endtime="20240523 17:49:13.616"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PERMANENTADD}</arg>
+<arg>${permanent}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.616" endtime="20240523 17:49:13.617"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.618" endtime="20240523 17:49:13.618"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUBMIT_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.618" endtime="20240523 17:49:13.618"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${NAMEVERIFY}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.618" endtime="20240523 17:49:13.618"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${text}</arg>
+<arg>Name:${name}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.618" endtime="20240523 17:49:13.618"/>
+</kw>
+<status status="FAIL" starttime="20240523 17:49:13.606" endtime="20240523 17:49:13.618"/>
+</kw>
+<status status="FAIL" starttime="20240523 17:49:13.603" endtime="20240523 17:49:13.618">No browser is open.</status>
+</test>
+<test id="s1-t4" name="Verify All The Data From Excel" line="16">
+<kw name="Read All The Data">
+<arg>erin</arg>
+<arg>test4@gmail.com</arg>
+<arg>3690 Lavilla Dr</arg>
+<arg>160 N Gibbs St</arg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name} : ${email} : ${current} : ${permanent}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240523 17:49:13.629" endtime="20240523 17:49:13.631"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FULLNAME}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240523 17:49:13.635" level="INFO">Typing text 'erin' into text field 'id:userName'.</msg>
+<msg timestamp="20240523 17:49:13.635" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240523 17:49:13.635" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20240523 17:49:13.633" endtime="20240523 17:49:13.639"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAILADD}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.639" endtime="20240523 17:49:13.639"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CURRENTADD}</arg>
+<arg>${current}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.639" endtime="20240523 17:49:13.639"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PERMANENTADD}</arg>
+<arg>${permanent}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.639" endtime="20240523 17:49:13.639"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.639" endtime="20240523 17:49:13.639"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUBMIT_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.639" endtime="20240523 17:49:13.639"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${NAMEVERIFY}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.639" endtime="20240523 17:49:13.639"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${text}</arg>
+<arg>Name:${name}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.639" endtime="20240523 17:49:13.639"/>
+</kw>
+<status status="FAIL" starttime="20240523 17:49:13.629" endtime="20240523 17:49:13.639"/>
+</kw>
+<status status="FAIL" starttime="20240523 17:49:13.618" endtime="20240523 17:49:13.639">No browser is open.</status>
+</test>
+<test id="s1-t5" name="Verify All The Data From Excel" line="16">
+<kw name="Read All The Data">
+<arg>abram</arg>
+<arg>test5@gmail.com</arg>
+<arg>2795 Evans Mill Red</arg>
+<arg>357 E Plainview Rd</arg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name} : ${email} : ${current} : ${permanent}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240523 17:49:13.717" endtime="20240523 17:49:13.719"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FULLNAME}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240523 17:49:13.720" level="INFO">Typing text 'abram' into text field 'id:userName'.</msg>
+<msg timestamp="20240523 17:49:13.720" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240523 17:49:13.720" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20240523 17:49:13.719" endtime="20240523 17:49:13.723"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAILADD}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.723" endtime="20240523 17:49:13.724"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CURRENTADD}</arg>
+<arg>${current}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.724" endtime="20240523 17:49:13.724"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PERMANENTADD}</arg>
+<arg>${permanent}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.724" endtime="20240523 17:49:13.725"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.725" endtime="20240523 17:49:13.725"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUBMIT_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.725" endtime="20240523 17:49:13.725"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${NAMEVERIFY}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.726" endtime="20240523 17:49:13.726"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${text}</arg>
+<arg>Name:${name}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" starttime="20240523 17:49:13.726" endtime="20240523 17:49:13.726"/>
+</kw>
+<status status="FAIL" starttime="20240523 17:49:13.717" endtime="20240523 17:49:13.726"/>
+</kw>
+<status status="FAIL" starttime="20240523 17:49:13.714" endtime="20240523 17:49:13.728">No browser is open.</status>
+</test>
+<status status="FAIL" starttime="20240523 17:49:11.567" endtime="20240523 17:49:13.732"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="5" skip="0" id="s1" name="Test Excel">Test Excel</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240523 17:49:13.569" level="WARN">Multiple tests with name 'Verify All The Data From Excel' executed in suite 'Test Excel'.</msg>
+<msg timestamp="20240523 17:49:13.602" level="WARN">Multiple tests with name 'Verify All The Data From Excel' executed in suite 'Test Excel'.</msg>
+<msg timestamp="20240523 17:49:13.618" level="WARN">Multiple tests with name 'Verify All The Data From Excel' executed in suite 'Test Excel'.</msg>
+<msg timestamp="20240523 17:49:13.651" level="WARN">Multiple tests with name 'Verify All The Data From Excel' executed in suite 'Test Excel'.</msg>
+</errors>
+</robot>
